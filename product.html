@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Products - Thinelle BeBe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Poppins', sans-serif; background-color: #fff8f6; color: #444; margin: 0; padding: 1em; }
+    nav, footer { text-align: center; background: #fcd5ce; padding: 1em; }
+    nav a { margin: 0 0.5em; color: #6a1b9a; text-decoration: none; }
+    h1 { text-align: center; color: #d6336c; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 2em;
+      max-width: 1000px;
+      margin: 2em auto;
+    }
+    .product-card {
+      background: white;
+      border-radius: 15px;
+      padding: 1em;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1em;
+    }
+    .button {
+      display: inline-block;
+      padding: 0.6em 1.2em;
+      background: #d6336c;
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      margin-top: 0.5em;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="ingredients.html">Ingredients</a>
+    <a href="product.html">Product</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="contact.html">Contact</a>
+    <a href="buy.html">Buy</a>
+  </nav>
+
+  <h1>Our Products</h1>
+  <div class="grid">
+    <div class="product-card">
+      <img src="https://via.placeholder.com/260x260.png?text=Nipple+Butter" alt="Nipple Butter">
+      <h3>Nipple Butter</h3>
+      <p>100% Lanolin for natural healing.</p>
+      <p><strong>R150.00</strong></p>
+      <a class="button" href="buy.html">Buy Now</a>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/260x260.png?text=Baby+Balm" alt="Baby Balm">
+      <h3>Baby Balm</h3>
+      <p>Gentle protection for baby skin.</p>
+      <p><strong>R120.00</strong></p>
+      <a class="button" href="buy.html">Buy Now</a>
+    </div>
+    <div class="product-card">
+      <img src="https://via.placeholder.com/260x260.png?text=Body+Butter" alt="Body Butter">
+      <h3>Body Butter</h3>
+      <p>For dry and sensitive skin.</p>
+      <p><strong>R180.00</strong></p>
+      <a class="button" href="buy.html">Buy Now</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Thinelle BeBe.
+  </footer>
+</body>
+</html>
