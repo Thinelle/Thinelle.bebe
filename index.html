@@ -1,150 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Thinelle BeBe - Home</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
-    html {
-      scroll-behavior: smooth;
-    }
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #fff8f6;
-      color: #444;
-      margin: 0;
-      padding: 0;
-    }
-    nav, footer {
-      text-align: center;
-      background: #fcd5ce;
-      padding: 1em;
-    }
-    nav a {
-      margin: 0 0.5em;
-      color: #6a1b9a;
-      text-decoration: none;
-      font-weight: 500;
-    }
-    h1, h2 {
-      text-align: center;
-      color: #d6336c;
-    }
-    .section {
-      padding: 2em 1em;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .hero {
-      background: #ffe5ec;
-      padding: 3em 1em;
-      text-align: center;
-    }
-    .hero h1 {
-      font-size: 2.5em;
-      margin-bottom: 0.5em;
-    }
-    .hero p {
-      font-size: 1.2em;
-      max-width: 600px;
-      margin: auto;
-    }
-    .button {
-      display: inline-block;
-      padding: 0.6em 1.2em;
-      background: #d6336c;
-      color: white;
-      border-radius: 30px;
-      text-decoration: none;
-      margin-top: 1em;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-      gap: 2em;
-      margin-top: 2em;
-    }
-    .product-card {
-      background: white;
-      border-radius: 15px;
-      padding: 1em;
-      text-align: center;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
-    .product-card img {
-      width: 100%;
-      border-radius: 10px;
-      margin-bottom: 1em;
-    }
-    footer {
-      margin-top: 3em;
-    }
+    /* same styles reused across all pages */
+    body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; background: #fff8f6; color: #444; }
+    nav { background: linear-gradient(90deg, #ffb6b9, #fcd5ce, #cdb4db); display: flex; justify-content: center; gap: 1em; padding: 1em; position: sticky; top: 0; z-index: 100; }
+    nav a { text-decoration: none; color: #6a1b9a; font-weight: 500; }
+    nav a:hover { color: #d6336c; }
+    header { text-align: center; padding: 4em 1em 2em; background: #ffe5ec; }
+    section { padding: 2em 1em; max-width: 1000px; margin: auto; }
+    h2 { color: #d6336c; text-align: center; }
+    .reviews { background-color: #fcd5ce; border-radius: 20px; padding: 2em 1em; }
+    .review { background: #fff; padding: 1em; border-radius: 15px; margin-bottom: 1.5em; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    footer { text-align: center; padding: 2em 1em; background-color: #cdb4db; color: #6a1b9a; }
   </style>
 </head>
 <body>
-
-  <!-- Navigation -->
   <nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="ingredients.html">Ingredients</a>
-    <a href="product.html">Product</a>
-    <a href="reviews.html">Reviews</a>
-    <a href="contact.html">Contact</a>
-    <a href="buy.html">Buy</a>
+    <a href="index.html">Home</a>
+    <a href="page2.html">Products</a>
+    <a href="page3.html">Contact</a>
   </nav>
 
-  <!-- Home Section -->
-  <section id="home" class="hero">
+  <header>
     <h1>Welcome to Thinelle BeBe</h1>
-    <p>Natural, gentle skincare for moms and babies. Discover our carefully crafted products made with love and healing in mind.</p>
-    <a href="#products" class="button">View Featured Products</a>
+    <p>Natural care for every mother and baby.</p>
+  </header>
+
+  <section id="about">
+    <h2>About Thinelle BeBe</h2>
+    <p>Thinelle BeBe Nipple Butter was created by Michelle Louwrens, passionate about providing safe, pure products for breastfeeding moms. Our product is handmade with love and care to support your breastfeeding journey.</p>
   </section>
 
-  <!-- Product Previews -->
-  <section id="products" class="section">
-    <h2>Our Products</h2>
-    <div class="grid">
-      <div class="product-card">
-        <img src="20250616_155222.jpg" alt="Nipple Butter">
-        <h3>Nipple Butter</h3>
-        <p>100% Lanolin for natural healing.</p>
-        <p><strong>R150.00</strong></p>
-        <a class="button" href="buy.html">Buy Now</a>
-      </div>
-      <div class="product-card">
-        <img src="https://via.placeholder.com/260x260.png?text=Baby+Balm" alt="Baby Balm">
-        <h3>Baby Balm</h3>
-        <p>Gentle protection for baby skin.</p>
-        <p><strong>R120.00</strong></p>
-        <a class="button" href="buy.html">Buy Now</a>
-      </div>
-      <div class="product-card">
-        <img src="https://via.placeholder.com/260x260.png?text=Body+Butter" alt="Body Butter">
-        <h3>Body Butter</h3>
-        <p>For dry and sensitive skin.</p>
-        <p><strong>R180.00</strong></p>
-        <a class="button" href="buy.html">Buy Now</a>
-      </div>
-    </div>
+  <section id="reviews" class="reviews">
+    <h2>Customer Reviews</h2>
+    <div class="review"><p><strong>Jane D.</strong></p><p>"Thinelle BeBe saved my breastfeeding journey!"</p></div>
+    <div class="review"><p><strong>Amelia S.</strong></p><p>"Love that it’s pure lanolin. Highly recommend!"</p></div>
+    <div class="review"><p><strong>Leigh W.</strong></p><p>"Feels amazing and worked better than anything else I tried!"</p></div>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="section">
-    <h2>About Us</h2>
-    <p>
-      Thinelle BeBe was created with the goal of providing safe, natural, and effective skincare for moms and their little ones.
-      Every product is handmade with ingredients you can trust, aimed at soothing, protecting, and nourishing the skin.
-    </p>
-    <p>
-      As a brand born from personal care and love, we believe in transparency, quality, and affordability. Whether you're a new mom or shopping for someone special, Thinelle BeBe products are made to support your journey.
-    </p>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    &copy; 2025 Thinelle BeBe. All rights reserved.
-  </footer>
-
+  <footer>&copy; 2025 Thinelle BeBe. All rights reserved.</footer>
 </body>
 </html>
